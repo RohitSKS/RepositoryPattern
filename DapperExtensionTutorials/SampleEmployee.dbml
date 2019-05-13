@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Tutorials" Class="SampleEmployeeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PCZ-EE211138\SQLEXPRESS;Initial Catalog=Tutorials;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TutorialsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SampleEmployee" Member="SampleEmployees">
+    <Type Name="SampleEmployee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Technology" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Test" Member="Tests">
+    <Type Name="Test">
+      <Column Name="id" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
