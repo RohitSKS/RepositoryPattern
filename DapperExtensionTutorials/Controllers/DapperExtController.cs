@@ -26,6 +26,7 @@ namespace DapperExtensionTutorials.Controllers
         {
             List<EmployeeModel> result =_employeeservice.EmployeeRepository.All().ToList();
             var result2 = _employeeservice.TestRepository.All();
+            //This is the test comments...
             return View();
         }
 
